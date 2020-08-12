@@ -208,27 +208,34 @@
               <h4 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction:"></a><strong>Introduction:</strong></h4><p>To understand how a brain is working with the environment, the direction of signal flows between connected neurons is usually the first challenge to face. The difficulty comes from the facts that the direct experimental measurement is in general not easily available, while the axon-dendrite polarity is barely known for most neurons. Therefore, it is important to develop an effective and efficient method to identify neuron polarity based on the big data of their optical images.</p>
 <p>The goal of this study is to demonstrate how a machine learning can be applied on the classification of the axon-dendrite polarity of Drosophila brain neurons. We first map the 3D image of each neuron onto a 2D schematic tree-structure, and also generate a “reduced tree” by appropriately removing irrelevant branches. Secondly, we develop five different types of supervised machine learning models, including Support Vector Machine (SVM), Random Forest(RF), Gradient Boosting Decision Tree(FBDT), Extreme Gradient Boosting(EFB), and Deep Neuron Networks(DNN) to classify axon nodes and dendrite nodes independently based on available labeled neurons.</p>
 <p>Mixed point (the first node to separate axon braches and dendrite branches) for each neuron is also trained to be determined in the reduced tree. Using the available data of 97 neurons so far, our model give a pretty high precision (&gt;95%) for axon/dendrite prediction. Simple analysis shows that besides of position related to soma, one could also determine the polarity by including the angles and relative lengths in the succeeding branches. Our results show how to utilize machine learning to resolve the long-standing problem of neural polarity, and hence make further progress in understanding the brain function of Drosophila.</p>
-<p><img src="http://jptanjing.oss-cn-beijing.aliyuncs.com/img/image-20200808154333172.png" srcset="/img/loading.gif" alt="image-20200808154333172"></p>
+<div align=center>
+<img src="https://jptanjing.oss-cn-beijing.aliyuncs.com/img/image20200808154333172.png" srcset="/img/loading.gif" style="zoom: 80%;" />
+</div>
+
+
+
 <p>(Caption): 69 labeled neurons in the Drosophila brain</p>
-<p><img src="http://jptanjing.oss-cn-beijing.aliyuncs.com/img/image-20200808154432417.png" srcset="/img/loading.gif" alt="image-20200808154432417"></p>
+<img src="http://jptanjing.oss-cn-beijing.aliyuncs.com/img/image20200808154432417.png" srcset="/img/loading.gif" alt="image-20200808154432417" style="zoom:80%;" />
+
 <p>(Caption) An example of the transformation. Green/red nodes are axons and dendrites respectively.</p>
 <div align=center>
-<img src="http://jptanjing.oss-cn-beijing.aliyuncs.com/img/the tree diagram.jpg" srcset="/img/loading.gif" style="zoom: 80%;" />
+<img src="http://jptanjing.oss-cn-beijing.aliyuncs.com/img/Neuron_CNN.jpg" srcset="/img/loading.gif" style="zoom: 80%;" />
 </div>
 
 
 
 <p>(Caption) How the tree diagram of a neuron can be reduced to an effective model.</p>
 <div align=center>
-<img src="http://www.phys.nthu.edu.tw/~aicmt/img/DNN model.jpg" srcset="/img/loading.gif" style="zoom: 60%;" />
+<img src="http://jptanjing.oss-cn-beijing.aliyuncs.com/img/Neuron_DNN.png" srcset="/img/loading.gif" style="zoom: 60%;" />
 </div>
 
 
 
 <p>(Caption) Our DNN model for the classification of neuron polarity.</p>
 <div align=center>
-<img src="http://www.phys.nthu.edu.tw/~aicmt/img/Precision and recall for the predicted axon and dendrite nodes.jpg" srcset="/img/loading.gif" style="zoom: 20%;" />
+<img src="https://jptanjing.oss-cn-beijing.aliyuncs.com/img/Neuron_table.png" srcset="/img/loading.gif" style="zoom: 50%;" />
 </div>
+
 
 
 
